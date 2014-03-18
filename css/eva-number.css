@@ -1,0 +1,145 @@
+
+body {
+  background-color: black;
+  padding: 20px 100px;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.eva-counter {
+  width: 480px;
+  border: 2px solid #ee7a28;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: black;
+  padding: 20px 20px;
+}
+
+.eva-number {
+  float: left;
+  position: relative;
+  width: 100px;
+  height: 210px;
+  margin: 10px;
+}
+.eva-number .a, .eva-number .b, .eva-number .c, .eva-number .d, .eva-number .e, .eva-number .f, .eva-number .g {
+  position: absolute;
+}
+.eva-number .a.on {
+  border-top-color: #ee7a28;
+}
+.eva-number .b.on,
+.eva-number .c.on
+{
+  border-right-color: #ee7a28;
+}
+.eva-number .d.on {
+  border-bottom-color: #ee7a28;
+}
+.eva-number .e.on,
+.eva-number .f.on
+{
+  border-left-color: #ee7a28;
+}
+
+.eva-number .g.on .top {
+  border-bottom-color: #ee7a28;
+}
+.eva-number .g.on .bottom {
+  border-top-color: #ee7a28;
+}
+
+.eva-number .a {
+  left: 5px;
+  width: 60px;
+  border-top: 20px solid #222222;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.eva-number .b {
+  border-right: 20px solid #222222;
+  left: 90px;
+  top: 5px;
+  height: 60px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.eva-number .c {
+  left: 90px;
+  top: 110px;
+  height: 60px;
+  width: 0;
+  border-right: 20px solid #222222;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.eva-number .d {
+  top: 195px;
+  left: 5px;
+  height: 0;
+  width: 60px;
+  border-bottom: 20px solid #222222;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.eva-number .e {
+  left: 0;
+  top: 110px;
+  height: 60px;
+  width: 0;
+  border-left: 20px solid #222222;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.eva-number .f {
+  left: 0;
+  top: 5px;
+  height: 60px;
+  width: 0;
+  border-left: 20px solid #222222;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.eva-number .g {
+  position: absolute;
+  top: 97.5px;
+  left: 20px;
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.eva-number .g .top {
+  height: 0;
+  width: 50px;
+  border-bottom: 10px solid #222222;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.eva-number .g .bottom {
+  height: 0;
+  width: 50px;
+  border-top: 10px solid #222;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
